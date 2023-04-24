@@ -7,6 +7,17 @@
 _putchar(char c);
 
 
+/* ------------------- FORMAT HANDLERS --------------------*/
+char *print_s(va_list arglist);
+int print_c(va_list arglist);
+int print_percent(va_list arglist);
+
+
+/* -------------------------- FLAGS HANDLER ------------------------*/
+int plus_flag(int value, int *printed_chars);
+int space_flag(int value, int *printed_chars, int plus_flag);
+int hash_flag(unsigned int value, int *printed_chars);
+
 
 
 /*1. print_int.c__ handles the conversion of int*/
